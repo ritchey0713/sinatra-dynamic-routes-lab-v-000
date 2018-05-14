@@ -31,17 +31,18 @@ class App < Sinatra::Base
        @number2 = params[:number2]
        
         if @operation == "add"
-         @number1.to_i + @number2.to_i
+        @answer = @number1.to_i + @number2.to_i
          
         elsif @operation == "subtract"
-        @number2.to_i - @number1.to_i
+        @answer = @number2.to_i - @number1.to_i
        
         elsif @operation == "multiply"
-        @number1.to_i * @number2.to_i
+        @answer = @number1.to_i * @number2.to_i
         
         else 
-          @number1.to_i / @number2.to_i 
+          @answer = @number1.to_i / @number2.to_i 
         end 
+        "#{@answer}"
      end 
     
     
