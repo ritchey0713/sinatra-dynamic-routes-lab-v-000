@@ -14,7 +14,7 @@ class App < Sinatra::Base
      end 
      
      get "/say/:number/:phrase" do 
-       @phrases= <%= "#{:number}.do 
+       <%= "#{:number}.do 
          #{:phrase}"%>
        end 
 
