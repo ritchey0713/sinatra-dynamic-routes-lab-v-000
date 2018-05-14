@@ -15,7 +15,7 @@ class App < Sinatra::Base
      
      get "/say/:number/:phrase" do 
        @phrases= <%= "#{:number}.do 
-         #{:phrase}"
+         #{:phrase}"%>
        end 
 
 end
