@@ -8,7 +8,7 @@ class App < Sinatra::Base
     end
     
      get "/square/:number" do 
-       @numbers = params[:number]
+       @numbers = params[:number].to_i
        binding.pry
      end 
 
