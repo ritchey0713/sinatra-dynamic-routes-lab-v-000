@@ -14,8 +14,5 @@ class App < Sinatra::Base
      end 
      
      get "/say/:number/:phrase" do 
-        "#{:number.to_i}.do 
-         #{:phrase}"
-       end 
-
+      
 end
