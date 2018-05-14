@@ -30,8 +30,10 @@ class App < Sinatra::Base
        @number1 = params[:number1]
        @number2 = params[:number2]
        
-       if @operation == "add"
-         @number1 + 
+        if @operation == "add"
+         @number1 + @number2
+         
+        elsif 
        
      end 
     
