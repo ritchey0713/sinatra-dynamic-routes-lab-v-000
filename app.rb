@@ -10,5 +10,6 @@ class App < Sinatra::Base
      get "/square/:number" do 
        @numbers = params[:number]
        binding.pry
+     end 
 
 end
